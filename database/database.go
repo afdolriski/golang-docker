@@ -28,7 +28,7 @@ func init() {
 		er(err)
 	}
 
-	byteFile, _ := ioutil.ReadAll(file)
+	byteFile, err := ioutil.ReadAll(file)
 	if err != nil {
 		er(err)
 	}
